@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PoButtonModule, PoI18nService, PoPageModule, PoWidgetModule } from '@po-ui/ng-components';
 import { defaultContext } from './app.config';
+import { NewModule } from '../new-module/new-module.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PoPageModule, PoButtonModule, PoWidgetModule],
+  imports: [RouterOutlet, PoPageModule, PoButtonModule, PoWidgetModule, NewModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
